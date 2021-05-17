@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'pradeep-dotnet1'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_da9dd61ee93d435a930c0047c4da5c6f }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d250b629bc8540cfaed3fdd6e04379f6 }}
         package: .
