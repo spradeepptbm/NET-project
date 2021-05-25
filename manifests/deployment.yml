@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "pradeepkube1-9460"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "pradeepkube1-9460"
+  template:
+    metadata:
+      labels:
+        app: "pradeepkube1-9460"
+    spec:
+      containers:
+        - name: "pradeepkube1-9460"
+          image: "pradeepkubereg.azurecr.io/pradeepkube1"
+          ports:
+          - containerPort: 8090
