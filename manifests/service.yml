@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "pradeepkube1-9460"
+    labels:
+        app: "pradeepkube1-9460"
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 8090
+      targetPort: 8090
+      protocol: TCP
+      name: http
+    selector:
+        app: "pradeepkube1-9460"
